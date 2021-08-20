@@ -1,11 +1,17 @@
 @import "libs/bootstrap-reboot.min";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+@import "base/variables";
 
 * body {
    font-family: "Raleway";
 }
 
 .container {
-   width: 1140px;
+   max-width: 1600px;
+   padding: 0 80px 0 80px;
    margin: 0 auto;
 }
+
+@import "blocks/header";
+@import "blocks/menu";
