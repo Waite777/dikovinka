@@ -1,0 +1,51 @@
+.menu {
+   margin-top: 30px;
+
+   a {
+      text-decoration: none;
+      color: $link-color;
+   }
+
+   li {
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-weight: 300;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   &__link {
+      position: relative;
+
+      &:hover {
+         .menu__sub-list {
+            display: block;
+         }
+         font-weight: 500;
+      }
+   }
+
+   &__sub-list {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      padding: 35px 0 0 0;
+      min-width: 300px;
+
+      li {
+         margin-top: 5px;
+      }
+   }
+
+   &__sub-link {
+      &:hover {
+         font-weight: 500;
+      }
+   }
+}
