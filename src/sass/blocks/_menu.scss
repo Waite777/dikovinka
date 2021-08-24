@@ -11,31 +11,34 @@
       text-transform: uppercase;
       font-size: 17px;
       font-weight: 300;
+      margin: 0px 1px 0px 1px;
    }
 
    &__list {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding: 0;
    }
 
    &__link {
       position: relative;
 
       &:hover {
-         .menu__sub-list {
+         .menu__sublist {
             display: block;
          }
-         font-weight: 500;
+         font-weight: 600;
+         margin: 0;
       }
    }
 
-   &__sub-list {
+   &__sublist {
       display: none;
       position: absolute;
       top: 0px;
       left: 0px;
-      padding: 35px 0 0 0;
+      padding: 30px 0 0 0;
       min-width: 300px;
 
       li {
@@ -43,9 +46,9 @@
       }
    }
 
-   &__sub-link {
+   &__sublink {
       &:hover {
-         font-weight: 500;
+         font-weight: 600;
       }
    }
 }

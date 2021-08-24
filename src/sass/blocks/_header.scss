@@ -10,12 +10,11 @@
    &__social {
       display: flex;
       width: 300px;
-      padding: 0 0 0 30px;
 
       a {
          font-size: 17px;
          color: $link-color;
-         padding: 8px;
+         margin: 8px;
          text-decoration: none;
       }
    }
@@ -40,7 +39,7 @@
 
    &__phone {
       font-size: 27px;
-      font-weight: 400;
+      font-weight: 500;
    }
 
    &__address {
